@@ -1,5 +1,5 @@
 exports.handler = async (event) => {
-    const VERIFY_TOKEN = "votre_token_secret";
+    const VERIFY_TOKEN = process.env.SECRET_TOKEN;
   
     if (event.httpMethod === 'GET') {
       // Vérification du webhook
